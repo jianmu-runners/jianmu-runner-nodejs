@@ -1,8 +1,8 @@
 name: Node Build
 description: Node Build
 owner: jianmu
-source: https://gitee.com/jianmu_dev/jianmu-runner-node-build
-docs: https://gitee.com/jianmu_dev/jianmu-runner-node-build
+source: https://gitee.com/jianmu-runners/jianmu-runner-node-build
+docs: https://gitee.com/jianmu-runners/jianmu-runner-node-build
 ref: node_build
 version: 12.16.2-alpine3.9
 type: DOCKER
