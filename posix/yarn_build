@@ -1,0 +1,16 @@
+#!/bin/sh
+
+set -x
+set -e
+
+if [[ ! -z "${JIANMU_WORKSPACE}" ]]; then
+    cd ${JIANMU_WORKSPACE}
+fi
+
+pwd 
+
+ls -a
+
+yarn install 
+
+yarn build ${JIANMU_BUILD_ARG}
