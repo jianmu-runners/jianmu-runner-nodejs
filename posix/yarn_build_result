@@ -1,0 +1,18 @@
+#!/bin/sh
+
+set -x
+set -e
+
+if [[ ! -z "${JIANMU_WORKSPACE}" ]]; then
+    cd ${JIANMU_WORKSPACE}
+fi
+
+pwd 
+
+ls -a
+
+yarn install 
+
+yarn build ${JIANMU_BUILD_ARG}
+
+echo "{\"package_name\": $(cat package.json | jq .name),\"package_version\": $(cat package.json|jq .version)}" > /tmp/result.json
