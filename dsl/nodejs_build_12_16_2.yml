@@ -1,0 +1,24 @@
+ref: node_build
+version: 12.16.2
+resultFile: /tmp/result.json
+inputParameters:
+  - ref: workspace
+    name: 工作目录
+    type: STRING
+    value: jianmu
+  - ref: build_arg
+    name: 构建参数
+    type: STRING
+    value: ""
+    value: ""
+outputParameters:
+  - ref: package_name
+    name: 名称
+    type: STRING
+    value: name
+  - ref: package_version
+    name: 版本
+    type: STRING
+    value: version
+spec:
+  image: 'jianmudev/nodejs_build:12.16.2'
