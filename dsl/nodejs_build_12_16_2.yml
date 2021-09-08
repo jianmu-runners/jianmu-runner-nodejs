@@ -1,4 +1,4 @@
-ref: node_build
+ref: nodejs_build
 version: 1.0.0-12.16.2
 resultFile: /tmp/result.json
 inputParameters:
