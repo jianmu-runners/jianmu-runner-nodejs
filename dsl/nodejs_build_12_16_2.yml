@@ -10,7 +10,6 @@ inputParameters:
     name: 构建参数
     type: STRING
     value: ""
-    value: ""
 outputParameters:
   - ref: package_name
     name: 名称
