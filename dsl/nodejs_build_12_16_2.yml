@@ -20,4 +20,4 @@ outputParameters:
     type: STRING
     value: version
 spec:
-  image: 'jianmudev/nodejs_build:1.0.0-12.16.2'
+  image: 'jianmudev/jianmu-runner-nodejs-build:1.0.0-12.16.2'
