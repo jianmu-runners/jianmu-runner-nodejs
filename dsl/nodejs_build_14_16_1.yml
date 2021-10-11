@@ -1,5 +1,5 @@
 ref: nodejs_build
-version: 1.0.0-14.16.1
+version: 1.1.0-14.16.1
 resultFile: /tmp/result.json
 inputParameters:
   - ref: workspace
@@ -8,6 +8,10 @@ inputParameters:
     value: jianmu
   - ref: build_arg
     name: 构建参数
+    type: STRING
+    value: ""
+  - ref: mirror_registry_url
+    name: 镜像源地址
     type: STRING
     value: ""
 outputParameters:
@@ -20,4 +24,4 @@ outputParameters:
     type: STRING
     value: version
 spec:
-  image: 'jianmudev/jianmu-runner-nodejs-build:1.0.0-14.16.1'
+  image: 'jianmudev/jianmu-runner-nodejs-build:1.1.0-14.16.1'

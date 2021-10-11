@@ -7,6 +7,7 @@
 ```
 JIANMU_WORKSPACE: 执行打包命令的工作目录
 JIANMU_BUILD_ARG: 执行build命令时的参数
+JIANMU_MIRROR_REGISTRY_URL: 镜像源地址
 ```
 
 #### 输出参数

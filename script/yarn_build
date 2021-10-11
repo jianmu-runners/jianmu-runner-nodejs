@@ -7,6 +7,11 @@ if [[ ! -z "${JIANMU_WORKSPACE}" ]]; then
     cd ${JIANMU_WORKSPACE}
 fi
 
+if [[ ! -z "${JIANMU_MIRROR_REGISTRY_URL}" ]]; then
+    npm config set registry "${JIANMU_MIRROR_REGISTRY_URL}"
+    npm config get registry
+fi
+
 pwd 
 
 ls -a
