@@ -10,7 +10,11 @@ inputParameters:
     name: 构建参数
     type: STRING
     value: ""
-  - ref: mirror_registry_url
+  - ref: registry_url
+    name: 镜像源地址
+    type: STRING
+    value: ""
+  - ref: disturl_url
     name: 镜像源地址
     type: STRING
     value: ""

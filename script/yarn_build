@@ -7,9 +7,14 @@ if [[ ! -z "${JIANMU_WORKSPACE}" ]]; then
     cd ${JIANMU_WORKSPACE}
 fi
 
-if [[ ! -z "${JIANMU_MIRROR_REGISTRY_URL}" ]]; then
-    npm config set registry "${JIANMU_MIRROR_REGISTRY_URL}"
-    npm config get registry
+if [[ ! -z "${JIANMU_REGISTRY_URL}" ]]; then
+    yarn config set registry "${JIANMU_REGISTRY_URL}"
+    yarn config get registry
+fi
+
+if [[ ! -z "${JIANMU_DISTURL_URL}" ]]; then
+    yarn config set disturl "${JIANMU_DISTURL_URL}"
+    yarn config get disturl
 fi
 
 pwd 
