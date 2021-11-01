@@ -1,5 +1,5 @@
 ref: nodejs_build
-version: 1.1.0-14.16.1
+version: 1.2.0-14.16.1
 resultFile: /tmp/result.json
 inputParameters:
   - ref: workspace
@@ -11,11 +11,11 @@ inputParameters:
     type: STRING
     value: ""
   - ref: registry_url
-    name: 镜像源地址
+    name: registry url
     type: STRING
     value: ""
   - ref: disturl_url
-    name: 镜像源地址
+    name: disturl url
     type: STRING
     value: ""
 outputParameters:
@@ -28,4 +28,4 @@ outputParameters:
     type: STRING
     value: version
 spec:
-  image: 'jianmudev/jianmu-runner-nodejs-build:1.1.0-14.16.1'
+  image: 'jianmudev/jianmu-runner-nodejs-build:1.2.0-14.16.1'
