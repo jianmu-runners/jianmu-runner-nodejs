@@ -1,11 +1,11 @@
 ref: nodejs_build
-version: 1.2.0-14.16.1
+version: 1.3.0-14.16.1
 resultFile: /tmp/result.json
 inputParameters:
   - ref: workspace
     name: 工作目录
     type: STRING
-    value: jianmu
+    required: true
   - ref: build_arg
     name: 构建参数
     type: STRING
@@ -22,10 +22,10 @@ outputParameters:
   - ref: package_name
     name: 名称
     type: STRING
-    value: name
+    required: true
   - ref: package_version
     name: 版本
     type: STRING
-    value: version
+    required: true
 spec:
-  image: 'jianmudev/jianmu-runner-nodejs-build:1.2.0-14.16.1'
+  image: 'jianmudev/jianmu-runner-nodejs-build:1.3.0-14.16.1'
