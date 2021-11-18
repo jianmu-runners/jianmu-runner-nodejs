@@ -1,5 +1,5 @@
 ref: nodejs_build
-version: 1.3.0-14.16.1
+version: 1.2.1-14.16.1
 resultFile: /tmp/result.json
 inputParameters:
   - ref: workspace
@@ -28,4 +28,4 @@ outputParameters:
     type: STRING
     required: true
 spec:
-  image: 'jianmudev/jianmu-runner-nodejs-build:1.3.0-14.16.1'
+  image: 'jianmudev/jianmu-runner-nodejs-build:1.2.1-14.16.1'
