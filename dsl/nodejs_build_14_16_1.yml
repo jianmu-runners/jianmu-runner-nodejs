@@ -28,4 +28,4 @@ outputParameters:
     type: STRING
     required: true
 spec:
-  image: 'jianmudev/jianmu-runner-nodejs-build:1.2.1-14.16.1'
+  image: 'jianmudev/jianmu-runner-nodejs-build:1.2.0-14.16.1'
