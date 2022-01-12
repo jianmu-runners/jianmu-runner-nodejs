@@ -1,4 +1,4 @@
-FROM node:14.16.1-alpine3.13
+FROM node:${node_image_tag}
 
 RUN apk add --no-cache ca-certificates jq && \
         rm -rf /var/lib/apt/lists/*
