@@ -18,7 +18,7 @@ package_version: 版本号
 
 #### 构建docker镜像
 ```
-docker build --rm -f Dockerfile -t jianmuxxx/tag .
+docker build --rm -f Dockerfile -t jianmurunner/${tag} .
 ```
 
 #### 使用
