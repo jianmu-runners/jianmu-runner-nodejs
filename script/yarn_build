@@ -17,12 +17,17 @@ if [[ ! -z "${JIANMU_DISTURL_URL}" ]]; then
     yarn config get disturl
 fi
 
-pwd 
+if [[ ! -z "${JIANMU_SASS_BINARY_SITE_URL}" ]]; then
+    yarn config set sass_binary_site "${JIANMU_SASS_BINARY_SITE_URL}"
+    yarn config get sass_binary_site
+fi
+
+pwd
 
 ls -a
 
-yarn install 
+yarn install
 
-yarn build ${JIANMU_BUILD_ARG}
+yarn ${JIANMU_BUILD_ACTION} ${JIANMU_BUILD_ARG}
 
 echo "{\"package_name\": $(cat package.json | jq .name),\"package_version\": $(cat package.json|jq .version)}" > /tmp/result.json
