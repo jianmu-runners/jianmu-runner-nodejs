@@ -1,11 +1,16 @@
 ref: nodejs_build
 version: 1.2.1-${node_version}
+description: 1、支持构建命令自定义配置；2、增加node-sass二进制包下载地址配置
 resultFile: /tmp/result.json
 inputParameters:
   - ref: workspace
     name: 工作目录
     type: STRING
     required: true
+  - ref: build_action
+    name: 构建命令
+    type: STRING
+    value: "build"
   - ref: build_arg
     name: 构建参数
     type: STRING
@@ -16,6 +21,10 @@ inputParameters:
     value: ""
   - ref: disturl_url
     name: disturl url
+    type: STRING
+    value: ""
+  - ref: sass_binary_site
+    name: node-sass二进制包下载地址
     type: STRING
     value: ""
 outputParameters:
