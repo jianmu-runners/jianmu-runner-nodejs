@@ -23,7 +23,7 @@ inputParameters:
     name: disturl url
     type: STRING
     value: ""
-  - ref: sass_binary_site
+  - ref: sass_binary_site_url
     name: node-sass二进制包下载地址
     type: STRING
     value: ""
