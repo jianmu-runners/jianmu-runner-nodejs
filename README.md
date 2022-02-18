@@ -6,8 +6,10 @@
 #### 输入参数
 ```
 JIANMU_WORKSPACE: 执行打包命令的工作目录
-JIANMU_BUILD_ARG: 执行build命令时的参数
+JIANMU_BUILD_ACTION: 打包命令，默认为build
+JIANMU_BUILD_ARG: 执行打包命令时的参数
 JIANMU_MIRROR_REGISTRY_URL: 镜像源地址
+JIANMU_SASS_BINARY_SITE_URL: node-sass二进制包下载地址
 ```
 
 #### 输出参数
